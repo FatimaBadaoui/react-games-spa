@@ -1,0 +1,31 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    /* Variables */
+    --white: #eee;
+    --black: #444;
+}
+
+body {
+    background-color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
