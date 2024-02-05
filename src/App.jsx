@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar.jsx";
 import GameList from "./routes/GameList.jsx";
 import PageNotFound from "./routes/PageNotFound.jsx";
 import Games from "./routes/Games.jsx";
+import MemoryGame from "./routes/MemoryGame/index.jsx";
 import { useEffect, useState } from "react";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/games" element={<Games />}>
           <Route index element={<GameList />} />
+          <Route path="memory-game" element={<MemoryGame />} />
         </Route>
         <Route
           path="/login"

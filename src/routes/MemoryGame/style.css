@@ -1,0 +1,89 @@
+.memory-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: #BEA119;
+    text-shadow: 2px 2px 0 #444, -1px -1px 0 #444;
+  }
+  
+  .cards-container {
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    background-color: #105e5e;
+    padding: 1rem;
+  
+    .card {
+      background-image: url("https://cdn.pixabay.com/photo/2013/07/13/13/22/stars-160916_1280.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: grid;
+      place-content: center;
+      transform: rotateY(180deg);
+      animation: hideCard 2s linear;
+      transition: transform 500ms;
+      cursor: pointer;
+  
+      &:hover {
+        opacity: 0.8;
+      }
+  
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        opacity: 0;
+        animation: hideImg 2s linear;
+        transition: all 500ms;
+      }
+  
+      &.active {
+        transform: rotateY(0);
+        img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  @keyframes hideCard {
+    0%,
+    50% {
+      transform: rotateY(0);
+    }
+    100% {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  @keyframes hideImg {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .reload-btn {
+    padding: 0.6rem;
+    font-size: 3rem;
+    background-color: #BEA119;
+    color: #eee;
+    border: 5px solid #105e5e;
+    position: absolute;
+    top: 50%;
+    right: 23%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #d4b83b;
+      box-shadow: none;
+    }
+  }
