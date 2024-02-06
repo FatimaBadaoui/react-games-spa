@@ -1,14 +1,14 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 
-import Home from "./routes/Home.jsx";
+import Home from "./routes/Home/index.jsx";
 import Login from "./routes/Login/index.jsx";
-import Contact from "./routes/Contact.jsx";
-import About from "./routes/About.jsx";
+import Contact from "./routes/Contact/index.jsx";
+import About from "./routes/About/index.jsx";
 import NavBar from "./components/NavBar.jsx";
 import GameList from "./routes/GameList/index.jsx";
-import PageNotFound from "./routes/PageNotFound.jsx";
-import Games from "./routes/Games.jsx";
+import PageNotFound from "./routes/PageNotFound/index.jsx";
+import Games from "./routes/Games/index.jsx";
 import MemoryGame from "./routes/MemoryGame/index.jsx";
 import { useEffect, useState } from "react";
 
