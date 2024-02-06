@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
-import data from "../utilities/data.js";
 import Card from "./Card.jsx";
 
-const Cards = () => {
+const Cards = ({ data }) => {
   const [cards, setCards] = useState(null);
   const [prevCardIndex, setPrevCardIndex] = useState(-1);
 
   useEffect(() => {
     // shuffle the cards
     data.sort(() => Math.random() - 0.5);
-    setCards(data);
+    setCards([...data]);
   }, []);
 
   function check(current) {

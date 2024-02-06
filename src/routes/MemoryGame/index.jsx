@@ -1,18 +1,24 @@
 import "./style.css";
 import Cards from "./components/Cards.jsx";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+import data from "./utilities/data.js";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faRotateRight } from "@fortawesome/free-solid-svg-icons";
+// import { useState } from "react";
 
 function MemoryGame() {
-  const navigate = useNavigate();
+  // const [reload, setReload] = useState(false);
+
+  // const clickHandler = () => {
+  //   setReload(true);
+  // };
+
   return (
     <>
       <h1 className="memory-title">Memory Game</h1>
-      <Cards />
-      <button className="reload-btn" onClick={() => navigate("/games/memory-game")}>
+      <Cards data={data} />
+      {/* <button className="reload-btn" onClick={clickHandler}>
         <FontAwesomeIcon icon={faRotateRight} />
-      </button>
+      </button> */}
     </>
   );
 }

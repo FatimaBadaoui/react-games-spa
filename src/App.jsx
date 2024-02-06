@@ -6,7 +6,7 @@ import Login from "./routes/Login/index.jsx";
 import Contact from "./routes/Contact.jsx";
 import About from "./routes/About.jsx";
 import NavBar from "./components/NavBar.jsx";
-import GameList from "./routes/GameList.jsx";
+import GameList from "./routes/GameList/index.jsx";
 import PageNotFound from "./routes/PageNotFound.jsx";
 import Games from "./routes/Games.jsx";
 import MemoryGame from "./routes/MemoryGame/index.jsx";
@@ -15,12 +15,12 @@ import { useEffect, useState } from "react";
 function App() {
   const [isLogged, setIsLogged] = useState(false);
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   // when loading the page turn back to the home page
-  useEffect(() => {
-    navigate("/");
-  }, []);
+  // useEffect(() => {
+  //   navigate("/");
+  // }, []);
 
   return (
     <>
