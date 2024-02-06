@@ -1,15 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "./Card.jsx";
+import data from "../utilities/data.js";
 
-const Cards = ({ data }) => {
-  const [cards, setCards] = useState(null);
+const Cards = () => {
+  data.sort(() => Math.random() - 0.5);
+  const [cards, setCards] = useState(JSON.parse(JSON.stringify(data)));
   const [prevCardIndex, setPrevCardIndex] = useState(-1);
-
-  useEffect(() => {
-    // shuffle the cards
-    data.sort(() => Math.random() - 0.5);
-    setCards([...data]);
-  }, []);
 
   function check(current) {
     if (cards[current].name == cards[prevCardIndex].name) {
@@ -41,17 +37,19 @@ const Cards = ({ data }) => {
   }
 
   return (
-    <div className="cards-container">
-      {cards &&
-        cards.map((item, index) => (
-          <Card
-            key={index}
-            item={item}
-            index={index}
-            handleClick={handleClick}
-          />
-        ))}
-    </div>
+    <>
+      <div className="cards-container">
+        {cards &&
+          cards.map((item, index) => (
+            <Card
+              key={index}
+              item={item}
+              index={index}
+              handleClick={handleClick}
+            />
+          ))}
+      </div>
+    </>
   );
 };
 
