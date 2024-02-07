@@ -1,10 +1,13 @@
-import { useNavigate } from "react-router-dom";
 import "./style.css";
-import { useState } from "react";
+import liloAvatar from "../../utilities/images/lilo.png";
+import { useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { UserContext } from "../../contexts/UserContext.jsx";
 
-const Login = ({ isLogged, setIsLogged }) => {
-  const userData = { username: "lilo", password: "1234" };
+const userData = { username: "lilo", password: "1234", avatar: liloAvatar };
 
+const Login = () => {
+  const { login } = useContext(UserContext);
   const [isIncorrect, setIsIncorrect] = useState(false);
 
   const navigate = useNavigate();
@@ -15,8 +18,8 @@ const Login = ({ isLogged, setIsLogged }) => {
     const password = event.target.elements["password"].value;
 
     if (username === userData.username && password === userData.password) {
+      login(userData);
       navigate("/games");
-      setIsLogged(true);
     } else {
       setIsIncorrect(true);
       event.target.reset();

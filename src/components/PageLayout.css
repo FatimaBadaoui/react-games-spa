@@ -1,0 +1,65 @@
+header {
+  width: 100%;
+  height: 6rem;
+  background-color: #444;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  font-size: 1.5rem;
+
+  a {
+    color: inherit;
+    &.selected {
+      color: yellow;
+    }
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .login-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+
+    .selected {
+      color: red;
+    }
+  }
+
+  .user-container {
+    .user-img {
+      width: 80px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      img {
+        border-radius: inherit;
+      }
+    }
+
+    .user-dropdown {
+      width: 150px;
+      background-color: #444;
+      font-size: 0.7rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+      position: absolute;
+      right: 1px;
+      top: 6rem;
+
+      .logout-btn {
+        padding: 7px;
+        font-weight: 900;
+      }
+    }
+  }
+}
