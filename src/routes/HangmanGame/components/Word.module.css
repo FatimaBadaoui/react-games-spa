@@ -1,0 +1,14 @@
+.word-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    .letter-container {
+        border-bottom: 6px solid #27187e;
+        padding: 0 5px;
+        color: #ff8600;
+        width: 80px;
+    }
+}

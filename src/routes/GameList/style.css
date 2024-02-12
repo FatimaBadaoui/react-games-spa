@@ -1,7 +1,7 @@
 .games-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: ;
+    gap: 2rem;
     max-width: 80%;
     margin: auto;
 

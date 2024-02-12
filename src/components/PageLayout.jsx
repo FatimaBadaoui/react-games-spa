@@ -44,11 +44,9 @@ const PageLayout = () => {
           {user ? (
             <User />
           ) : (
-            <button className="login-btn">
-              <NavLink to="/login" className={isSelected}>
-                Login
-              </NavLink>
-            </button>
+            <NavLink to="/login" className={isSelected}>
+              Login
+            </NavLink>
           )}
         </div>
       </header>

@@ -1,0 +1,25 @@
+.repeat-container {
+  position: absolute;
+  height: 950px;
+  width: 1000px;
+  top: 16rem;
+  display: grid;
+  place-content: center;
+  background-color: #27187edf;
+  color: #ff8600;
+  
+  button {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #ff8600;
+    border: none;
+    outline: 3px solid #27187e;
+    border-radius: 5px;
+    color: #27187e;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fbbd76;
+    }
+  }
+}

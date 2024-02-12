@@ -1,0 +1,15 @@
+.letter-button {
+    font-size: 2rem;
+    padding: 5px;
+    width: 65px;
+    height: 65px;
+    border: none;
+    background-color: #758bfd;
+    color: #f1f2f6;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #27187e;
+    }
+}

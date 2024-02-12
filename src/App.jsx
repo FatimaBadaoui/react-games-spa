@@ -14,6 +14,7 @@ import MemoryGame from "./routes/MemoryGame/index.jsx";
 import PageLayout from "./components/PageLayout.jsx";
 // contexts
 import UserContextProvider from "./contexts/UserContext.jsx";
+import HangmanGame from "./routes/HangmanGame/index.jsx";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/games" element={<Games />}>
               <Route index element={<GameList />} />
-              <Route path="memory-game" element={<MemoryGame />} />
+              <Route path="memory" element={<MemoryGame />} />
+              <Route path="hangman" element={<HangmanGame />} />
             </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/contact" element={<Contact />} />
