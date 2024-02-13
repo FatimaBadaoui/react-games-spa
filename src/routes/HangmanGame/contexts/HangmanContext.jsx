@@ -3,11 +3,10 @@ import words from "../utilities/words.js";
 
 export const HangmanContext = createContext();
 
-const prova = "hangman";
-
 const HangmanProvider = ({ children }) => {
-  const randomWord = words[Math.floor(Math.random() * words.length)];
 
+  const randomWord = words[Math.floor(Math.random() * words.length)];
+  // after getting a random word from the array, pass it the initial value for the word state
   const [word, setWord] = useState(randomWord.toUpperCase());
   const [chancesLeft, setChancesLeft] = useState(6);
   const [correctLetters, setCorrectLetters] = useState("");
