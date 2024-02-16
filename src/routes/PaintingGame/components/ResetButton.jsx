@@ -1,3 +1,5 @@
+import classes from "../style.module.css"
+
 import { useContext } from "react";
 import { PaintContext } from "../contexts/PaintContext.jsx";
 
@@ -6,7 +8,7 @@ const ResetButton = () => {
 
   return (
     <button
-      className="reset-btn"
+      className={classes["reset-btn"]}
       onClick={() => (canva.current.innerHTML = "")}
     >
       Reset

@@ -1,5 +1,5 @@
 // css
-import "./style.css";
+import classes from "./style.module.css";
 // contexts
 import PaintContextProvider from "./contexts/PaintContext.jsx";
 // components
@@ -12,17 +12,17 @@ function PaintingGame() {
   return (
     <>
       <PaintContextProvider>
-        <div className="paint-game">
-          <h2 className="paint-title1">Painting Game</h2>
-          <div className="drawing-container">
+        <div className={classes["paint-game"]}>
+          <h2 className={classes["paint-title1"]}>Painting Game</h2>
+          <div className={classes["drawing-container"]}>
             <Canva />
-            <div className="inputs">
+            <div className={classes["inputs"]}>
               <ColorPicker />
               <SizePicker />
               <ResetButton />
             </div>
           </div>
-          <h2 className="paint-title2">Painting Game</h2>
+          <h2 className={classes["paint-title2"]}>Painting Game</h2>
         </div>
       </PaintContextProvider>
     </>

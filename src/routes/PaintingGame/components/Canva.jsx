@@ -1,3 +1,5 @@
+import classes from "../style.module.css"
+
 import { useContext } from "react";
 import { PaintContext } from "../contexts/PaintContext.jsx";
 
@@ -31,7 +33,7 @@ const Canva = () => {
 
   return (
     <div
-      className="canva"
+      className={classes.canva}
       ref={canva}
       onMouseDown={() => handleMouseDown(handleMove)}
       onMouseUp={() => handleMouseUp(handleMove)}

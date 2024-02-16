@@ -1,3 +1,5 @@
+import classes from "../style.module.css"
+
 import { useContext } from "react";
 import { PaintContext } from "../contexts/PaintContext.jsx";
 
@@ -5,7 +7,7 @@ const SizePicker = () => {
   const { size, setSize } = useContext(PaintContext);
 
   return (
-    <div className="size-selector">
+    <div className={classes["size-selector"]}>
       <label htmlFor="range">Choose brush size:</label>
       <input
         type="range"
