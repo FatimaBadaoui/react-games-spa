@@ -16,6 +16,11 @@ const GameList = () => {
           image="https://cdn.pixabay.com/photo/2018/06/10/22/48/chess-3467512_1280.jpg"
           name="Hangman"
         />
+        <GameCard
+          to="/games/painting"
+          image="https://cdn.pixabay.com/photo/2018/06/10/22/48/chess-3467512_1280.jpg"
+          name="Painting Game"
+        />
       </div>
     </div>
   );

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.paint-game {
+  display: flex;
+  align-items: center;
+
+  h2 {
+    font-family: "Finger Paint", sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(45deg, red, blue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+    &.paint-title1 {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      margin-left: 3rem;
+    }
+    &.paint-title2 {
+      writing-mode: vertical-lr;
+      margin-right: 3rem;
+    }
+  }
+}
+
+.drawing-container {
+  background: no-repeat
+    url("https://cdn.pixabay.com/photo/2016/02/19/10/59/art-1209519_1280.jpg");
+  background-size: cover;
+  width: 80%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .canva {
+    background-color: #fff;
+    flex: 0 1 60%;
+    min-width: 350px;
+    /* min-height: 600px; */
+    aspect-ratio: 1 / 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .inputs {
+    flex: 0 1 30%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: fit-content;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+
+    .color-selector {
+      input {
+        width: 80%;
+        height: 40px;
+      }
+    }
+
+    .size-selector {
+      input {
+        width: 200px;
+        appearance: none;
+        background: transparent;
+
+        &::-webkit-slider-runnable-track {
+          background-color: #ff0000;
+          border-radius: 5px;
+          height: 0.8rem;
+        }
+
+        &::-webkit-slider-thumb {
+          appearance: none;
+          background-color: #ffa2a2;
+          height: 1.6rem;
+          width: 1rem;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          margin-top: -6px;
+        }
+      }
+      datalist {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+      }
+    }
+
+    .reset-btn {
+      font-family: "Finger Paint", sans-serif;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      background-color: #ff0000;
+      color: #f4f4f4;
+      border: none;
+      border-radius: 5px;
+      width: fit-content;
+      padding: 0 20px;
+      box-shadow: #000000 0px 3px 8px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #f4f4f4;
+        color: #ff0000;
+        outline: 1px solid #ff0000;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .paint-game {
+    flex-direction: column;
+    h2 {
+      font-size: 1rem;
+      rotate: 90deg;
+    }
+  }
+  .canva {
+    width: 300px;
+    /* aspect-ratio: 0.5; */
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .size-selector {
+    input {
+      max-width: 100px;
+    }
+    datalist {
+      max-width: 100px;
+      font-size: 12px;
+    }
+  }
+}
+
+

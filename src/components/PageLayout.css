@@ -63,3 +63,7 @@ header {
     }
   }
 }
+
+main {
+  position: relative;
+}
