@@ -10,5 +10,10 @@
         padding: 0 5px;
         color: #ff8600;
         width: 80px;
+
+        span {
+            font-size: inherit;
+            text-align: center;
+        }
     }
 }
