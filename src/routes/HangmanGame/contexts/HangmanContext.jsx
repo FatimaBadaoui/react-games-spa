@@ -25,7 +25,7 @@ const HangmanProvider = ({ children }) => {
 
   const handleRepeatClick = () => {
     // reset everything
-    setWord(words[Math.floor(Math.random() * words.length)]);
+    setWord(words[Math.floor(Math.random() * words.length)].toUpperCase());
     setChancesLeft(6);
     setCorrectLetters("");
     setClickedLetters("");
