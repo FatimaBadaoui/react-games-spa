@@ -1,0 +1,26 @@
+.page-not-found {
+  border: 1px solid #000;
+  height: 86vh;
+  background-image: url("https://images.unsplash.com/photo-1517241034903-9a4c3ab12f00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  .error-message {
+    /* border: 1px solid #000; */
+    width: fit-content;
+    text-align: center;
+    margin: 6rem auto;
+
+    img {
+      width: 600px;
+      margin: 2rem 0;
+    }
+
+    a {
+        outline: 1px solid #fff;
+        padding: 5px 10px;
+        color: inherit;
+    }
+  }
+}
