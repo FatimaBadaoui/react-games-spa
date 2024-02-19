@@ -1,3 +1,17 @@
+{/* 
+
+Usage:
+Pass the website into the prop e.g: 
+
+<Hero imageUrl={"www.google.com/image.jpg"} title={"Contact"} />
+
+*******************************************
+* imageUrl => for the image of the banner *
+* title => for the h1 in the banner       *
+*******************************************
+
+*/}
+
 const Hero = ({ imageUrl, title }) => {
   const heroStyle = {
     backgroundImage: `url("${imageUrl}")`,
