@@ -1,13 +1,15 @@
 import { Link } from "react-router-dom";
 import Developer from "../../components/Developer.jsx";
 import "./style.css";
+import Hero from "../../components/Hero.jsx";
 
 const About = () => {
   return (
     <div className="about-container">
-      <div className="about-hero">
-        <h1>About Us</h1>
-      </div>
+      <Hero
+        imageUrl="https://images.unsplash.com/photo-1632059368252-be6d65abc4e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        title="About Us"
+      />
       <div className="about-info">
         <div className="history">
           <div className="image">
@@ -54,7 +56,9 @@ const About = () => {
         <div className="developers">
           <div>
             <h2>Behind the Scene</h2>
-            <Link className="contact-link" to="/contact" >Contact them</Link>
+            <Link className="contact-link" to="/contact">
+              Contact them
+            </Link>
           </div>
           <Developer
             img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhqf2sGGNDhLEocNibL7Z-tBVYUgRiAnTBA&usqp=CAU"
