@@ -2,7 +2,7 @@
   position: absolute;
   height: 950px;
   width: 1000px;
-  top: 16rem;
+  top: 0;
   display: grid;
   place-content: center;
   background-color: #27187edf;

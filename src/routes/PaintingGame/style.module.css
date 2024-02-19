@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -129,34 +125,6 @@ body {
         outline: 1px solid #ff0000;
         box-shadow: none;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .paint-game {
-    flex-direction: column;
-    h2 {
-      font-size: 1rem;
-      rotate: 90deg;
-    }
-  }
-  .canva {
-    width: 300px;
-    /* aspect-ratio: 0.5; */
-  }
-
-  label {
-    font-size: 12px;
-  }
-
-  .size-selector {
-    input {
-      max-width: 100px;
-    }
-    datalist {
-      max-width: 100px;
-      font-size: 12px;
     }
   }
 }
