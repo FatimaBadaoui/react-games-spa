@@ -38,6 +38,11 @@ const PageLayout = () => {
                 Contact
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/support" className={isSelected}>
+                Support
+              </NavLink>
+            </li>
           </ul>
         </nav>
         <div className={user ? "logout-container" : "login-container"}>

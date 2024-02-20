@@ -15,6 +15,7 @@ import MemoryGame from "./routes/MemoryGame/index.jsx";
 import PageLayout from "./components/PageLayout.jsx";
 import HangmanGame from "./routes/HangmanGame/index.jsx";
 import PaintingGame from "./routes/PaintingGame/index.jsx";
+import Support from "./routes/Support/index.jsx";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/support" element={<Support />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
