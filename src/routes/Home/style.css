@@ -1,0 +1,32 @@
+.home-hero {
+  h1 {
+    font-size: 6rem;
+    align-self: end;
+  }
+}
+
+.news-feed {
+  width: 70%;
+  margin: auto;
+  padding: 2rem;
+  .news-item {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* gap: 1rem; */
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+    .news-image {
+      /* border: 1px solid blue; */
+      width: 200px;
+      height: 200px;
+    }
+
+    .news-text {
+        /* border: 1px solid #000; */
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+  }
+}

@@ -1,7 +1,11 @@
+import HomeHero from "../../components/HomeHero.jsx";
+import NewsFeed from "../../components/NewsFeed.jsx";
+import "./style.css"
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome!</h1>
+    <div className="home-container">
+      <HomeHero />
+      <NewsFeed />
     </div>
   );
 };

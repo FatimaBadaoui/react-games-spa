@@ -1,0 +1,25 @@
+.news-article {
+  .article-image {
+    height: 600px;
+    position: relative;
+  }
+
+  h2 {
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    left: 10%;
+    color: white;
+    font-size: 5rem;
+    width: 60%;
+  }
+
+  .news-content {
+    /* border: 1px solid green; */
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
