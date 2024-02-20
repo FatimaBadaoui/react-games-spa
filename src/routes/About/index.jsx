@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Developer from "../../components/Developer.jsx";
 import "./style.css";
 import Hero from "../../components/Hero.jsx";
+import SupportForm from "../../components/SupportForm.jsx";
 
 const About = () => {
   return (
@@ -77,6 +78,7 @@ const About = () => {
           />
         </div>
       </div>
+      <SupportForm/>
     </div>
   );
 };
