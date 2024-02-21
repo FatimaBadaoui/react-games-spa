@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Yusei+Magic&display=swap');
+
+.homepage-buttons {
+  border: 1px solid #000;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url("https://img.freepik.com/free-vector/game-background-with-magic-maya-altar-jungle_107791-19342.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  button {
+    font-size: 2rem;
+    padding: 5px 10px;
+    color: #fefefe;
+    background: linear-gradient(45deg, #950101, #ff7300);
+    box-shadow: 5px 5px 5px #fefefe;
+    border: none;
+    outline: 2px solid #fefefe;
+    font-family: "Anta", sans-serif;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: none;
+      background: #ff7300;
+    }
+
+    a {
+        color: inherit;
+    }
+  }
+}

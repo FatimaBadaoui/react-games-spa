@@ -1,0 +1,55 @@
+.player {
+    /* border: 1px solid red; */
+    height: 85vh;
+    padding: 1rem;
+
+    .hpBar {
+        border: 3px solid #000;
+        width: 400px;
+        height: 30px;
+        display: grid;
+        place-content: center;
+    }
+
+    .heart {
+        height: 30px;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 30px;
+            object-fit: fill;
+        }
+    }
+
+    .playerAvatar {
+        height: 80%;
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+
+        .skillButton {
+            font-size: 1.3rem;
+            padding: 5px 10px;
+            color: #fff;
+            background: linear-gradient(45deg, #950101, #ff7300);
+            box-shadow: 5px 5px 5px #fff;
+            border: none;
+            outline: 2px solid #fff;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: none;
+                background: #ff7300;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Yusei+Magic&display=swap');
+
+.login-body {
+  border: 1px solid #000;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/space-game-background-with-landscape-planet_107791-1700.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708387200&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fefefe;
+
+  .login-container {
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+    /* border: 1px solid #000; */
+
+    h1 {
+      font-size: 4rem;
+      color: #422969;
+      font-family: "Anta", sans-serif;
+    }
+
+    p {
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      font-weight: 900;
+      color: #422969;
+      font-family: "Anta", sans-serif;
+    }
+
+    .players-container {
+      /* border: 1px solid #000; */
+      width: 60%;
+      margin: 3rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+
+      .player-card {
+        border: 1px solid #444;
+        padding-bottom: 10px;
+        cursor: pointer;
+        background-color: #fefefe75;
+        font-family: "Anta", sans-serif;
+        color: #422969;
+        box-shadow: #00000082 0px 3px 6px, #00000081 0px 3px 6px;
+        flex: 0 0 25%;
+        .playerImg {
+          /* border: 1px solid blue; */
+          aspect-ratio: 1 / 1;
+
+          img {
+            object-fit: contain;
+          }
+        }
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      padding: 5px 10px;
+      color: #fff;
+      background: linear-gradient(45deg, #950101, #ff7300);
+      box-shadow: 5px 5px 5px #fff;
+      border: none;
+      outline: 2px solid #fff;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: none;
+        background: #ff7300;
+      }
+
+      a {
+        color: inherit;
+        font-family: "Anta", sans-serif;
+      }
+    }
+  }
+}
