@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { UserContext } from "../contexts/UserContext.jsx";
 
-const GameCard = ({ to, image, name }) => {
+const GameCard = ({ to, image }) => {
   const { user } = useContext(UserContext);
   
   return (
@@ -11,7 +11,7 @@ const GameCard = ({ to, image, name }) => {
         <div className="game-image">
           <img src={image} alt="game image" />
         </div>
-        <h2 className="game-name">{name}</h2>
+        {/* <h2 className="game-name">{name}</h2> */}
       </div>
     </Link>
   );

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Yusei+Magic&display=swap');
+
+.PlayerVsPlayer {
+  /* border: 2px solid green; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-image: url("https://cdna.artstation.com/p/assets/images/images/012/113/288/large/eric-_j-08213.jpg?1533108263");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: "Anta", sans-serif;
+
+  .attacks {
+    /* border: 1px solid hotpink; */
+    text-align: center;
+    padding: 3rem;
+
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 6rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    .back-btn {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      padding: 5px 10px;
+      color: #fff;
+      background: linear-gradient(45deg, #950101, #ff7300);
+      box-shadow: 5px 5px 5px #fff;
+      border: none;
+      outline: 2px solid #fff;
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: none;
+        background: #ff7300;
+      }
+    }
+  }
+}

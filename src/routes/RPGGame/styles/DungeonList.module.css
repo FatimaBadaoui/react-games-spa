@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Yusei+Magic&display=swap');
+
+.dungeons-list {
+  height: 73vh;
+  /* border: 1px solid red; */
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  background-image: url("https://i.pinimg.com/originals/75/4c/6a/754c6a4949d2a68f2c7e5024b16904ea.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Anta", sans-serif;
+
+  h1 {
+    color: #fefefe;
+    text-align: center;
+  }
+
+  .dungeons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    color: #fefefe;
+    background: linear-gradient(45deg, #950101, #ff7300);
+    box-shadow: 5px 5px 5px #fefefe;
+    border: none;
+    outline: 2px solid #fefefe;
+    font-family: "Anta", sans-serif;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: none;
+      background: #ff7300;
+    }
+  }
+
+  .explore {
+    width: 300px;
+    margin: 2rem auto;
+  }
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Yusei+Magic&display=swap');
+
+.player-bar {
+  width: 100%;
+  height: 10rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  background: linear-gradient(45deg, #ff7300, #950101, #570101, #950101, #ff7300);
+  color: white;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #f0f0f0;
+  font-family: "Anta", sans-serif;
+
+  .user-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    img {
+      object-fit: fill;
+    }
+  }
+
+  .status-bar {
+    h3 {
+      color: #cfb5ff;
+    }
+    p {
+      margin-top: 7px;
+    }
+  }
+
+  .skills {
+    .skill {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      margin-bottom: 7px;
+
+      button {
+        font-size: 1.3rem;
+        color: #fefefe;
+        background: linear-gradient(45deg, #950101, #ff7300);
+        box-shadow: 2px 2px 5px #fefefe;
+        border: none;
+        outline: 1px solid #fefefe;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: none;
+          background: #ff7300;
+        }
+      }
+    }
+  }
+}
