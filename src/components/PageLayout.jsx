@@ -21,13 +21,11 @@ const PageLayout = () => {
                 Home
               </NavLink>
             </li>
-            {user && (
-              <li>
-                <NavLink to="/games" className={isSelected}>
-                  Games
-                </NavLink>
-              </li>
-            )}
+            <li>
+              <NavLink to="/games" className={isSelected}>
+                Games
+              </NavLink>
+            </li>
             <li>
               <NavLink to="/about" className={isSelected}>
                 About

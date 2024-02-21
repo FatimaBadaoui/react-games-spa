@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../contexts/UserContext.jsx";
 
 const GameCard = ({ to, image, name }) => {
+  const { user } = useContext(UserContext);
+  
   return (
-    <Link to={to}>
+    <Link to={user ? to : "/login"}>
       <div className="game-card">
         <div className="game-image">
           <img src={image} alt="game image" />
