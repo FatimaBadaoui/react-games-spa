@@ -13,7 +13,7 @@ export function ContactCard() {
             ></img>
           </div>
           <div className={styles["information"]}>
-            <h3 className={styles["title"]}>Fatima the math genius</h3>
+            <h3 className={styles["title"]}><span>Fatima</span> The math genius</h3>
             <span>
               Email: <a href="mailto:someone@example.com">blabla@blabla.com</a>
             </span>
@@ -23,7 +23,7 @@ export function ContactCard() {
 
         <div className={styles["person-wrapper-right"]}>
           <div className={styles["information"]}>
-            <h3 className={styles["title"]}>Pelle the lazy one</h3>
+            <h3 className={styles["title"]}><span>Pelle</span> The lazy one</h3>
             <span>
               Email: <a href="mailto:someone@example.com">blabla@blabla.com</a>
             </span>
@@ -45,7 +45,7 @@ export function ContactCard() {
             ></img>
           </div>
           <div className={styles["information"]}>
-            <h3 className={styles["title"]}>Elita the glorious one!</h3>
+            <h3 className={styles["title"]}><span>Elilta</span> The glorious one</h3>
             <span>
               Email: <a href="mailto:someone@example.com">blabla@blabla.com</a>
             </span>

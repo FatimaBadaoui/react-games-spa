@@ -14,12 +14,12 @@ const About = () => {
         <div className="history">
           <div className="image">
             <img
-              src="https://images.unsplash.com/photo-1532009877282-3340270e0529?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://images.rawpixel.com/image_1100/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA4L3Jhd3BpeGVsb2ZmaWNlNl8zZF9pbGx1c3RyYXRpb25fb2ZfYV9kaW1seV9saXRfZ2FtZV9yb29tX25lb25fd19kZDliOGJjOS1lZjU5LTRhYTktYmNhMi1iOWUyNDkyZmI0YzRfMS5qcGc.jpg"
               alt=""
             />
           </div>
           <div className="history-text">
-            <h2>The beginning</h2>
+            <h2><span>The</span> Beginning</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               deserunt doloremque ipsam explicabo delectus quidem sint, quae,
@@ -33,7 +33,7 @@ const About = () => {
         </div>
         <div className="mission-vision">
           <div className="mission">
-            <h3>Our Mission</h3>
+            <h3><span>Our</span> Mission</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
               ipsum voluptas eos sint deserunt, nam ex nobis quia accusantium
@@ -43,7 +43,7 @@ const About = () => {
             </p>
           </div>
           <div className="vision">
-            <h3>Our Vision</h3>
+            <h3><span>Our</span> Vision</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
               officia repudiandae dicta tempore ipsa ullam magni nihil,

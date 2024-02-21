@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 :root {
-    /* colors */
-    --highlight-color: #02B588;
-    --bg-color: #342E37;
-    --dark-bg: #2a262d;
-    --text-color: #FAFFFD;
+  /* colors */
+  --highlight-color: #02b588;
+  --bg-color: #342e37;
+  --dark-bg: #2a262d;
+  --text-color: #fafffd;
 
-    /* Fonts */
-    --highlight-font: "Oxanium", sans-serif;
-    --text-font: "Manrope", sans-serif;
+  /* Fonts */
+  --highlight-font: "Oxanium", sans-serif;
+  --text-font: "Manrope", sans-serif;
+
+  /*  */
+  --main-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }

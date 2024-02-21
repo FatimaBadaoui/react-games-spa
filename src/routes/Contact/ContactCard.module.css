@@ -1,18 +1,40 @@
+@import "../../styles/variables.css";
+
 .center-container {
-    display: flex;
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Vertically center the content */
-    height: 100vh; /* Adjust this value based on your layout */
-  }
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100vh; /* Adjust this value based on your layout */
+  
+}
 
 /* Contact card styles */
 .card-container {
   margin: 30px;
   border-radius: 20px;
   width: 1000px;
-  height: 800px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  box-shadow: var(--main-shadow);
+  border: 1px solid var(--highlight-color);
+
+  h3 {
+    font-size: 1.8rem;
+
+    span {
+      font-size: 130%;
+      color: var(--highlight-color);
+    }
+  }
+
+  span {
+    font-size: 1.3rem;
+
+    a {
+      color: var(--highlight-color);
+    }
+  }
 }
 
 .person-wrapper-left {
@@ -20,7 +42,8 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
-  padding-bottom: 36px;
+  background-color: var(--dark-bg);
+  border-radius: 20px;
 }
 
 .person-wrapper-right {
@@ -28,6 +51,9 @@
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-end;
+  background-color: var(--dark-bg);
+  margin: 20px 0;
+  border-radius: 20px;
 }
 
 .image-wrapper {
@@ -43,7 +69,7 @@
 .title {
   font-size: 1.25em;
   font-weight: bold;
-  padding-bottom: 36px;
+  padding-bottom: 20px;
 }
 
 span {
