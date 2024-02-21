@@ -1,7 +1,9 @@
-header {
+@import "../styles/variables.css";
+
+.header {
   width: 100%;
-  height: 6rem;
-  background-color: #444;
+  height: 7rem;
+  background-color: var(--dark-bg);
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -9,10 +11,26 @@ header {
   color: #eee;
   font-size: 1.5rem;
 
+  ul:hover a {
+    color: #02b58852;
+    transition: all ease-in-out 200ms;
+  }
+
+  ul:hover a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+  }
+
   a {
-    color: inherit;
+    color: #02b588;
+    font-weight: 900;
+    text-transform: uppercase;
+
     &.selected {
-      color: yellow;
+      color: var(--text-color);
+      text-decoration: underline;
+      text-underline-offset: 8px;
     }
   }
 
@@ -69,4 +87,6 @@ header {
 
 main {
   position: relative;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
 }

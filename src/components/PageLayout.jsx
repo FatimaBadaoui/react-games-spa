@@ -12,7 +12,7 @@ const PageLayout = () => {
 
   return (
     <>
-      <header>
+      <header className="header">
         <div className="logo"></div>
         <nav>
           <ul className="nav">

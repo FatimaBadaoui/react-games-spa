@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+    /* colors */
+    --highlight-color: #02B588;
+    --bg-color: #342E37;
+    --dark-bg: #2a262d;
+    --text-color: #FAFFFD;
+
+    /* Fonts */
+    --highlight-font: "Oxanium", sans-serif;
+    --text-font: "Manrope", sans-serif;
+}
