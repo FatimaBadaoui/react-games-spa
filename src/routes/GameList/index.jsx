@@ -12,23 +12,23 @@ const GameList = () => {
       <div className="games-container">
         <GameCard
           to="/games/memory"
-          image="https://cdn.pixabay.com/photo/2018/06/10/22/48/chess-3467512_1280.jpg"
-          name="Memory"
+          image="https://games.washingtonpost.com/arenaxstorage-blob/arenax-games/memoryGame/0.22/build/resources/assets/thumbs/thumb2x.jpg"
+          // name="Memory"
         />
         <GameCard
           to="/games/hangman"
-          image="https://cdn.pixabay.com/photo/2018/06/10/22/48/chess-3467512_1280.jpg"
-          name="Hangman"
+          image="https://play-lh.googleusercontent.com/3vU01hZIomX95xALi7bH1l2OEHFLZYvYsEx0OIjUS1FIPNrIua56phuSd8Fy4Yg9mMM"
+          // name="Hangman"
         />
         <GameCard
           to="/games/painting"
-          image="https://cdn.pixabay.com/photo/2018/06/10/22/48/chess-3467512_1280.jpg"
-          name="Painting Game"
+          image="https://yt3.googleusercontent.com/9_rMEndNL3hEETML2x4x7BLyL3-jnxmg2w1YO4g12S_LfTBA7PR_UF4CQWr5twWag3yK2IP_nQ=s900-c-k-c0x00ffffff-no-rj"
+          // name="Painting Game"
         />
         <GameCard
           to="/games/swordsandmagic"
-          image="https://cdn.pixabay.com/photo/2018/06/10/22/48/chess-3467512_1280.jpg"
-          name="Swords and Magic"
+          image="https://hb.imgix.net/b2cea080588eb6098e4615c08037de506b3430b6.jpg?auto=compress,format&fit=crop&h=353&w=616&s=01a7188a9e2065f0beff6f8de8825f47"
+          // name="Swords and Magic"
         />
       </div>
     </div>

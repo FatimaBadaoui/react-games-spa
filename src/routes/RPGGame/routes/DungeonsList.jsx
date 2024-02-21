@@ -33,14 +33,17 @@ const DungeonsList = () => {
           Cavern of Despair
         </button>
       </div>
-      <button
-        onClick={() => {
-          console.log(dungeon);
-          navigate("/games/swordsandmagic/homepage/playervsdungeon");
-        }}
-      >
-        Explore Dungeon
-      </button>
+      {dungeon && (
+        <button
+          className={classes["explore"]}
+          onClick={() => {
+            console.log(dungeon);
+            navigate("/games/swordsandmagic/homepage/playervsdungeon");
+          }}
+        >
+          Explore Dungeon
+        </button>
+      )}
     </div>
   );
 };

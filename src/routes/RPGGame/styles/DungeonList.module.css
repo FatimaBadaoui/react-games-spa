@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Yusei+Magic&display=swap');
 
 .dungeons-list {
-  height: 83vh;
+  height: 73vh;
   /* border: 1px solid red; */
   display: grid;
   place-content: center;
@@ -16,9 +16,14 @@
     text-align: center;
   }
 
+  .dungeons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
   button {
     margin-top: 2rem;
-    margin-right: 55px;
     font-size: 1.5rem;
     padding: 5px 10px;
     color: #fefefe;
@@ -33,5 +38,10 @@
       box-shadow: none;
       background: #ff7300;
     }
+  }
+
+  .explore {
+    width: 300px;
+    margin: 2rem auto;
   }
 }

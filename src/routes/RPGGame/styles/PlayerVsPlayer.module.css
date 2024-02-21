@@ -3,7 +3,6 @@
 .PlayerVsPlayer {
   /* border: 2px solid green; */
   width: 100%;
-  max-height: 85vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   background-image: url("https://cdna.artstation.com/p/assets/images/images/012/113/288/large/eric-_j-08213.jpg?1533108263");

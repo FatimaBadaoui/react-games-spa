@@ -3,7 +3,6 @@
 .playerVsDungeon {
   /* border: 2px solid green; */
   width: 100%;
-  max-height: 85vh;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   background-image: url("https://img.freepik.com/premium-photo/game-level-background-dungeon-dark-underground_849906-14289.jpg");

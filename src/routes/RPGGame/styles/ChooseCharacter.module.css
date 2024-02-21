@@ -2,7 +2,6 @@
 
 .login-body {
   border: 1px solid #000;
-  height: 100vh;
   background-image: url("https://img.freepik.com/free-vector/space-game-background-with-landscape-planet_107791-1700.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708387200&semt=ais");
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,8 +20,8 @@
     }
 
     p {
-      font-size: 1.8rem;
-      margin-top: 2rem;
+      font-size: 2.3rem;
+      margin-top: 1rem;
       font-weight: 900;
       color: #422969;
       font-family: "Anta", sans-serif;
