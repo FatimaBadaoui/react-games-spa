@@ -1,5 +1,7 @@
-import { NavLink, Outlet } from "react-router-dom";
 import "./PageLayout.css";
+import logo from "../utilities/images/logo.png";
+
+import { NavLink, Outlet } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext.jsx";
 import User from "./User.jsx";
@@ -13,7 +15,11 @@ const PageLayout = () => {
   return (
     <>
       <header className="header">
-        <div className="logo"></div>
+        <div className="logo">
+          <NavLink to="/">
+            <img src={logo} alt="logo" />
+          </NavLink>
+        </div>
         <nav>
           <ul className="nav">
             <li>

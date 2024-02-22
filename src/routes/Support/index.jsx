@@ -10,11 +10,11 @@ const Support = () => {
       />
       <form className="support-form">
         <label htmlFor="name">Full Name</label>
-        <input name="name" type="text" id="name" />
-        <label htmlFor="email">Email</label>
-        <input name="email" type="email" id="email" />
-        <label htmlFor="comment"> Comment</label>
-        <textarea name="comment" rows="4" cols="50" id="comment"></textarea>
+        <input name="name" type="text" id="name" placeholder="e.g John Doe" />
+        <label htmlFor="email">E-Mail</label>
+        <input name="email" type="email" id="email" placeholder="e.g john.doe@example.com" />
+        <label htmlFor="message"> Message</label>
+        <textarea name="message" rows="8" cols="50" id="message"placeholder="write your message here..."></textarea>
         <button type="submit">Submit</button>
       </form>
     </div>

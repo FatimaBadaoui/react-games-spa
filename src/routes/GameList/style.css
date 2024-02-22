@@ -1,22 +1,49 @@
+@import "../../styles/variables.css";
+
+.games-list {
+  height: 90vh;
+}
+
 .games-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    max-width: 80%;
-    margin: auto;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 80%;
+  margin: 3rem auto;
+  padding: 4rem;
+  border: 1px solid var(--highlight-color);
+  border-radius: 20px;
+  background-color: var(--bg-color);
+  box-shadow: var(--main-shadow);
 
-    .game-card {
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  .game-card {
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+      rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
-        .game-image {
-            width: 350px;
-            aspect-ratio: 1 / 1;
-        }
-        .game-name {
-            padding: 0.6rem 0;
-        }
+    .game-image {
+      /* width: 100%; */
+      aspect-ratio: 1 / 1;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        transform: scale(1.08);
+      }
     }
+    .game-name {
+      padding: 0.6rem 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 860px) { 
+  .games-list {
+    height: 200vh;
+  }
+
+  .games-container {
+    padding: 2rem;
+  }
 }
