@@ -43,6 +43,26 @@
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+      .speech-controls {
+        margin-top: 20px;
+      }
+      
+      .speech-controls button {
+        padding: 8px 16px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-color: var(--highlight-color);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+      
+      .speech-controls button:hover {
+        background-color: #02b58852;
+        transition: all ease-in-out 200ms;
+      }
+
     p {
       text-align: justify;
       line-height: 35px;
