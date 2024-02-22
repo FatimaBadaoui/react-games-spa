@@ -1,0 +1,6 @@
+.guess-boxes {
+  display: flex;
+  gap: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

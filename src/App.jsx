@@ -16,6 +16,7 @@ import MemoryGame from "./routes/MemoryGame/index.jsx";
 import PageLayout from "./components/PageLayout.jsx";
 import HangmanGame from "./routes/HangmanGame/index.jsx";
 import PaintingGame from "./routes/PaintingGame/index.jsx";
+import PerfectFour from "./routes/PerfectFour/index.jsx";
 import RPGGame from "./routes/RPGGame/index.jsx";
 import NewsArticle from "./components/NewsArticle.jsx";
 
@@ -32,6 +33,7 @@ function App() {
               <Route path="hangman" element={<HangmanGame />} />
               <Route path="painting" element={<PaintingGame />} />
               <Route path="swordsandmagic/*" element={<RPGGame />} />
+              <Route path="perfectfour" element={<PerfectFour />} />
             </Route>
             <Route path="/login" element={<Login />} />
             <Route path="/contact" element={<Contact />} />

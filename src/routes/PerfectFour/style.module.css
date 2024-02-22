@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.perfect-four-container {
+  padding-top: 6rem;
+}
+
+.perfect-four {
+  border: 1px solid #000;
+  width: fit-content;
+  padding: 0 4rem 4rem 4rem;
+  margin: auto;
+  font-family: "Noto Sans", sans-serif;
+  background-color: #444;
+  color: #fefefe;
+  text-align: center;
+  font-size: 26px;
+  border-radius: 10px;
+  box-shadow: #1563a384 0px 54px 55px, #1564a384 0px -12px 30px,
+    #1564a384 0px 4px 6px, #1564a384 0px 12px 13px, #1564a384 0px -3px 5px;
+
+  h1 {
+    text-transform: uppercase;
+    color: #1564a3;
+    /* -webkit-text-stroke: 0.8px #fefefe; */
+    text-shadow: 1px 1px 3px #f5f5f5e4;
+    font-size: 2.3em;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+
+    span {
+      font-size: 25px;
+      text-align: end;
+    }
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .input {
+    input {
+      font-size: 1em;
+      border-radius: 10px 0 0 10px;
+      padding: 3px 10px;
+      border: none;
+
+      &:focus {
+        outline: 1px solid #1564a3;
+      }
+    }
+
+    button {
+      font-size: 1em;
+      background-color: #1564a3;
+      color: inherit;
+      border: none;
+      padding: 3px 10px;
+      border-radius: 0 10px 10px 0;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #3b93db;
+      }
+    }
+  }
+
+  .win,
+  .lose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    p {
+      font-size: 1.6em;
+      font-weight: 900;
+    }
+
+    button {
+      background-color: #1564a3;
+      border: none;
+      color: inherit;
+      font-size: 1em;
+      padding: 3px 10px;
+      border-radius: 10px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #3b93db;
+      }
+    }
+  }
+
+  .win {
+    p {
+      color: #03d603;
+    }
+  }
+  .lose {
+    p {
+      color: red;
+    }
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .perfect-four {
+    h1 {
+      font-size: 2.5rem;
+
+      span {
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    .input {
+      input, button {
+        font-size: 1.1rem;
+      }
+    }
+
+    .win, .lose {
+      p {
+        font-size: 1em;
+        padding-top: 10px;
+      }
+
+      button {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

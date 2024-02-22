@@ -1,0 +1,24 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #222;
+  display: grid;
+  place-content: center;
+  font-size: 2.6em;
+}
+
+.correct {
+  background-color: #03d603;
+}
+
+.misplaced {
+  background-color: #ffaf1b;
+}
+
+@media screen and (max-width: 860px) {
+  .box {
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+  }
+}

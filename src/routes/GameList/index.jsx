@@ -1,6 +1,8 @@
 import GameCard from "../../components/GameCard.jsx";
 import Hero from "../../components/Hero.jsx";
+
 import "./style.css";
+import perfectFour from "../../utilities/images/perfectFour.png";
 
 const GameList = () => {
   return (
@@ -28,6 +30,11 @@ const GameList = () => {
         <GameCard
           to="/games/swordsandmagic"
           image="https://hb.imgix.net/b2cea080588eb6098e4615c08037de506b3430b6.jpg?auto=compress,format&fit=crop&h=353&w=616&s=01a7188a9e2065f0beff6f8de8825f47"
+          // name="Swords and Magic"
+        />
+        <GameCard
+          to="/games/perfectfour"
+          image={perfectFour}
           // name="Swords and Magic"
         />
       </div>
