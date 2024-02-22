@@ -58,6 +58,7 @@
 .image-wrapper {
   border-radius: 25px;
   overflow: hidden;
+  max-width: 250px;
 }
 
 .information {
@@ -95,6 +96,10 @@ a {
     }
     span {
       font-size: 16px;
+    }
+
+    .image-wrapper {
+      min-width: 100px;
     }
   }
 }

@@ -3,6 +3,11 @@ import Developer from "../../components/Developer.jsx";
 import "./style.css";
 import Hero from "../../components/Hero.jsx";
 
+// images
+import fatima from "../../utilities/images/fatima_avatar.png";
+import pelle from "../../utilities/images/pelle_avatar.png";
+import elu from "../../utilities/images/elu--avatar.png";
+
 const About = () => {
   return (
     <div className="about-container">
@@ -19,7 +24,9 @@ const About = () => {
             />
           </div>
           <div className="history-text">
-            <h2><span>The</span> Beginning</h2>
+            <h2>
+              <span>The</span> Beginning
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               deserunt doloremque ipsam explicabo delectus quidem sint, quae,
@@ -33,7 +40,9 @@ const About = () => {
         </div>
         <div className="mission-vision">
           <div className="mission">
-            <h3><span>Our</span> Mission</h3>
+            <h3>
+              <span>Our</span> Mission
+            </h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
               ipsum voluptas eos sint deserunt, nam ex nobis quia accusantium
@@ -43,7 +52,9 @@ const About = () => {
             </p>
           </div>
           <div className="vision">
-            <h3><span>Our</span> Vision</h3>
+            <h3>
+              <span>Our</span> Vision
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et
               officia repudiandae dicta tempore ipsa ullam magni nihil,
@@ -60,21 +71,13 @@ const About = () => {
               Contact them
             </Link>
           </div>
+          <Developer img={fatima} name="Fatima Badaoui" position="Developer" />
           <Developer
-            img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhqf2sGGNDhLEocNibL7Z-tBVYUgRiAnTBA&usqp=CAU"
-            name="Fatima Badaoui"
-            position="Developer"
-          />
-          <Developer
-            img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhqf2sGGNDhLEocNibL7Z-tBVYUgRiAnTBA&usqp=CAU"
+            img={pelle}
             name="Per-Emil Johansson"
             position="Developer"
           />
-          <Developer
-            img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqhqf2sGGNDhLEocNibL7Z-tBVYUgRiAnTBA&usqp=CAU"
-            name="Elilta Mesfin Raya"
-            position="Developer"
-          />
+          <Developer img={elu} name="Elilta Mesfin Raya" position="Developer" />
         </div>
       </div>
     </div>
