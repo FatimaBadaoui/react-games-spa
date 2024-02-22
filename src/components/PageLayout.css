@@ -5,6 +5,7 @@
   height: 7rem;
   background-color: var(--dark-bg);
   padding: 0 2rem;
+  padding-right: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +23,7 @@
 
   ul:hover a {
     color: #02b58852;
-    transition: all 200ms ease-in-out ;
+    transition: all 200ms ease-in-out;
   }
 
   ul:hover a:hover {
@@ -62,7 +63,7 @@
 
   .user-container {
     .user-img {
-      width: 80px;
+      width: 70px;
       border-radius: 50%;
       cursor: pointer;
 
@@ -74,23 +75,46 @@
     .user-dropdown {
       z-index: 10;
       width: 200px;
-      height: 85vh;
-      background-color: #444;
-      font-size: 0.7rem;
+      height: 200px;
+      background-color: #1c1c1cad;
+      font-size: 1.2rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
       padding: 1rem;
       position: absolute;
-      right: 1px;
-      top: 6rem;
+      right: -200px;
+      top: 7rem;
+      box-shadow: var(--main-shadow);
+      animation: slide-from-right 500ms ease-in-out forwards;
 
       .logout-btn {
         padding: 7px;
         font-weight: 900;
+        font-size: 1rem;
         cursor: pointer;
+        border-radius: 20px;
+        background-color: var(--highlight-color);
+        color: var(--text-color);
+        border: none;
+        margin-top: 10px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #018363;
+        }
       }
     }
+  }
+}
+
+@keyframes slide-from-right {
+  0% {
+    right: -200px;
+  }
+
+  100% {
+    right: 1px;
   }
 }
 
@@ -98,4 +122,39 @@ main {
   position: relative;
   background-color: var(--dark-bg);
   color: var(--text-color);
+}
+
+@media screen and (max-width: 860px) {
+  .header {
+    font-size: 1.3rem;
+    padding-left: 4.2rem;
+    
+    .logo {
+      /* z-index: 12; */
+      width: 120px;
+    }
+    nav {
+      .nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+        background-color: var(--dark-bg);
+        height: 100vh;
+
+        li {
+          transform: rotate(-90deg);
+          font-size: 16px;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  main {
+    margin-left: 4rem;
+  }
 }

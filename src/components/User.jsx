@@ -26,6 +26,10 @@ const User = () => {
             <strong>Username: </strong>
             {user.username}
           </p>
+          <p>
+            <strong>E-Mail: </strong>
+            {user.email}
+          </p>
           <button className="logout-btn" onClick={handleClickLogout}>
             Log Out
           </button>
