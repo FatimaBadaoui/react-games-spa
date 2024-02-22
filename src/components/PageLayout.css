@@ -11,9 +11,18 @@
   color: #eee;
   font-size: 1.5rem;
 
+  .logo {
+    width: 170px;
+    transition: all 500ms ease-in-out;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+  }
+
   ul:hover a {
     color: #02b58852;
-    transition: all ease-in-out 200ms;
+    transition: all 200ms ease-in-out ;
   }
 
   ul:hover a:hover {
