@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--dark-bg);
 }
 
 /* scrollbar start */

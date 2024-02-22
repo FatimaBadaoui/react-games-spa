@@ -2,7 +2,6 @@
 
 .hangman-title {
   text-align: center;
-  margin-top: 1rem;
   font-family: "Bowlby One SC", sans-serif;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -10,6 +9,7 @@
   background: linear-gradient(45deg, #ff8600 20%, #27187e 50%, #ff8600);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fefefe;
 }
 
 .hangman-main-container {
