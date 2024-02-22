@@ -6,8 +6,6 @@ const NewsArticle = () => {
   const { id } = useParams();
   const { title, image, content, content2 } = newsJSON[id - 1];
 
-  const articleText = `${title}. ${content}. ${content2}`;
-
   return (
     <div className="news-article">
       <h2>{title}</h2>
