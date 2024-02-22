@@ -1,8 +1,6 @@
-import React from "react";
 import { useParams } from "react-router-dom";
 import newsJSON from "../utilities/news.json";
 import "./NewsArticle.css";
-import TextToSpeechControl from "./TextToSpeachControl";
 
 const NewsArticle = () => {
   const { id } = useParams();
@@ -19,7 +17,6 @@ const NewsArticle = () => {
       <div className="news-content">
         <p>{content}</p>
         <p>{content2}</p>
-        <TextToSpeechControl textToSpeak={articleText} />
       </div>
     </div>
   );
