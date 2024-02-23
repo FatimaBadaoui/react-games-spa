@@ -107,6 +107,7 @@
 
 @media screen and (max-width: 860px) {
   .perfect-four {
+    width: 90%;
     h1 {
       font-size: 2.5rem;
 
@@ -120,8 +121,12 @@
     }
 
     .input {
+      input {
+        width: 70%;
+      }
+
       input, button {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
     }
 

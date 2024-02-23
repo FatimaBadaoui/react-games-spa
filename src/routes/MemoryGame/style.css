@@ -96,3 +96,9 @@
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .memory-title {
+    font-size: 2.5rem;
+  }
+}

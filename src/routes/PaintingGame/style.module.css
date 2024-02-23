@@ -129,4 +129,24 @@ body {
   }
 }
 
+@media screen and (max-width: 860px) {
+  .paint-game {
+    flex-direction: column;
+
+    h2 {
+      font-size: 2rem;
+      rotate: 90deg;
+      margin-top: -5rem;
+    }
+
+    .drawing-container {
+      margin-top: -11rem;
+      background-image: none;
+      
+      .inputs {
+        margin-top: -14rem;
+      }
+    }
+  }
+}
 

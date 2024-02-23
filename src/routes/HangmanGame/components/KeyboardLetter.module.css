@@ -13,3 +13,11 @@
         background-color: #27187e;
     }
 }
+
+@media screen and (max-width: 860px) {
+    .letter-button {
+        font-size: 1rem;
+        width: 30px;
+        height: 30px;
+    }
+}
