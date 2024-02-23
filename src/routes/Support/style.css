@@ -58,10 +58,11 @@
 
 @media screen and (max-width: 860px) {
     .support {
-        height: fit-content;
+        /* height: fit-content; */
+        padding-bottom: 2rem;
     }
   .support-form {
-    width: 70%;
+    width: 85%;
     font-size: 18px;
   }
 }

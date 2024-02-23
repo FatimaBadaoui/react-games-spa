@@ -89,13 +89,23 @@ a {
 }
 
 @media screen and (max-width: 860px) {
+
+  .center-container {
+    padding-bottom: 2rem;
+  }
+
+  .card-container {
+    width: 300px;
+    padding: 1rem;
+  }
   .person-wrapper-left,
   .person-wrapper-right {
+    padding: 10px;
     h3 {
-      font-size: 1rem;
+      font-size: 14px;
     }
     span {
-      font-size: 16px;
+      font-size: 12px;
     }
 
     .image-wrapper {
