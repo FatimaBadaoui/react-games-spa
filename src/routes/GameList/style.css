@@ -44,6 +44,11 @@
   }
 
   .games-container {
-    padding: 2rem;
+    padding: 2rem 0;
+
+    .game-card {
+      width: 200px;
+      margin: auto;
+    }
   }
 }

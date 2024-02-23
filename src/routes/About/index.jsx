@@ -65,7 +65,7 @@ const About = () => {
           </div>
         </div>
         <div className="developers">
-          <div>
+          <div className="title-button">
             <h2>Behind the Scene</h2>
             <Link className="contact-link" to="/contact">
               Contact them

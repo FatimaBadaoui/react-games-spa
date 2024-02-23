@@ -83,10 +83,12 @@
       font-size: 3rem;
       padding-left: 2.5rem;
     }
-
-    p {
-      font-size: 22px;
+    .news-content {
+      padding: 1.5rem;
+      p {
+        font-size: 18px;
+        width: 230px;
+      }
     }
   }
-
 }

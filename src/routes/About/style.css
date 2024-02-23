@@ -104,7 +104,6 @@
 
 @media screen and (max-width: 860px) {
   .about-container {
-    
     .about-info {
       .history {
         flex-direction: column;
@@ -129,12 +128,23 @@
     }
 
     .developers {
-      h2 {
-        font-size: 1.5rem;
+      .title-button {
+        margin-bottom: 20px;
+        h2 {
+          font-size: 2rem;
+        }
+
+        .contact-link {
+          font-size: 16px;
+        }
       }
 
-      a {
-        margin-left: 20%;
+      .developer {
+        margin-top: 10px;
+
+        .dev-image {
+          width: 150px;
+        }
       }
     }
   }
