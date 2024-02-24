@@ -1,0 +1,23 @@
+@import "../styles/variables.css";
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.socialMedia-color {
+  color: var(--highlight-color);
+
+}
+.footer-container {
+  background-color: var(--bg-color);
+
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-around;
+  padding:25px;
+}
+.social-links a{
+    color:var(--text-color)
+}

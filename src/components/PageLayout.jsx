@@ -1,5 +1,6 @@
 import "./PageLayout.css";
 import logo from "../utilities/images/logo.png";
+import Footer from "./Footer.jsx"
 
 import { NavLink, Outlet } from "react-router-dom";
 import { useContext } from "react";
@@ -62,6 +63,7 @@ const PageLayout = () => {
       <main>
         <Outlet />
       </main>
+      <Footer/>
     </>
   );
 };
