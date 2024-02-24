@@ -8,7 +8,6 @@
 
 .socialMedia-color {
   color: var(--highlight-color);
-
 }
 .footer-container {
   background-color: var(--bg-color);
@@ -16,8 +15,22 @@
   color: var(--text-color);
   display: flex;
   justify-content: space-around;
-  padding:25px;
+  padding: 25px;
 }
-.social-links a{
-    color:var(--text-color)
+.social-links a {
+  color: var(--text-color);
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    font-size: 110%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .footer-container {
+    font-size: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }

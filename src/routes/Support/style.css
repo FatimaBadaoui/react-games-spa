@@ -1,7 +1,8 @@
 @import "../../styles/variables.css";
 
 .support {
-  height: 100vh;
+  /* height: 100vh; */
+  padding-bottom: 1rem;
 }
 
 .support-form {

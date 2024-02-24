@@ -1,7 +1,7 @@
 @import "../../styles/variables.css";
 
 .games-list {
-  height: 90vh;
+  padding-bottom: 1rem;
 }
 
 .games-container {
@@ -37,11 +37,7 @@
   }
 }
 
-
-@media screen and (max-width: 860px) { 
-  .games-list {
-    height: 200vh;
-  }
+@media screen and (max-width: 860px) {
 
   .games-container {
     padding: 2rem 0;
