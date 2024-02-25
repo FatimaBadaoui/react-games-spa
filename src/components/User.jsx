@@ -30,6 +30,12 @@ const User = () => {
             <strong>E-Mail: </strong>
             {user.email}
           </p>
+          <button
+            className="profile-btn"
+            onClick={() => navigate("/userprofile")}
+          >
+            Update Profile
+          </button>
           <button className="logout-btn" onClick={handleClickLogout}>
             Log Out
           </button>

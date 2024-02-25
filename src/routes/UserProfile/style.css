@@ -1,0 +1,64 @@
+.profile-container {
+  padding-bottom: 2rem;
+  
+  .profile-form {
+    border: 1px solid var(--highlight-color);
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+    background-color: var(--bg-color);
+    max-width: 550px;
+    padding: 2rem;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+
+    label {
+      font-family: var(--highlight-font);
+      &::first-letter {
+        color: var(--highlight-color);
+        font-size: 120%;
+      }
+    }
+
+    input {
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 18px;
+
+      &:focus {
+        border: none;
+        outline: 3px solid var(--highlight-color);
+      }
+    }
+
+    button {
+      font-size: inherit;
+      width: 40%;
+      margin: 1rem auto;
+      background-color: var(--highlight-color);
+      color: var(--text-color);
+      border: none;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-family: var(--highlight-font);
+
+      &:hover {
+        cursor: pointer;
+        background-color: #018363;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .profile-container {
+    height: 100vh;
+
+    .profile-form {
+      width: 80%;
+      font-size: 18px;
+    }
+  }
+}

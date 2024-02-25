@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import newsJSON from "../utilities/news.json";
-import "./NewsArticle.css";
+import "../styles/NewsArticle.css";
 
 const NewsArticle = () => {
   const { id } = useParams();

@@ -1,4 +1,4 @@
-import "./PageLayout.css";
+import "../styles/PageLayout.css";
 import logo from "../utilities/images/logo.png";
 import Footer from "./Footer.jsx"
 

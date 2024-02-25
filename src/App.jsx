@@ -19,6 +19,7 @@ import PaintingGame from "./routes/PaintingGame/index.jsx";
 import PerfectFour from "./routes/PerfectFour/index.jsx";
 import RPGGame from "./routes/RPGGame/index.jsx";
 import NewsArticle from "./components/NewsArticle.jsx";
+import UserProfile from "./routes/UserProfile/index.jsx";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/userprofile" element={<UserProfile />} />
             <Route path="/:id" element={<NewsArticle />} />
             <Route path="*" element={<PageNotFound />} />
           </Route>

@@ -88,7 +88,7 @@
       box-shadow: var(--main-shadow);
       animation: slide-from-right 500ms ease-in-out forwards;
 
-      .logout-btn {
+      .logout-btn, .profile-btn {
         padding: 7px;
         font-weight: 900;
         font-size: 1rem;

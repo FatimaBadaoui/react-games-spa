@@ -12,8 +12,13 @@ const UserContextProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
   };
+
+  const updateUser = (userObj) => {
+    setUser({ ...user, ...userObj });
+  };
+
   return (
-    <UserContext.Provider value={{ user, login, logout }}>
+    <UserContext.Provider value={{ user, login, logout, updateUser }}>
       {children}
     </UserContext.Provider>
   );
