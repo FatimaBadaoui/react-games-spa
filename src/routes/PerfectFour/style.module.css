@@ -2,6 +2,8 @@
 
 .perfect-four-container {
   padding-top: 6rem;
+  padding-bottom: 3rem;
+  min-height: 80vh;
 }
 
 .perfect-four {
