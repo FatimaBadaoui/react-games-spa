@@ -21,19 +21,18 @@ const UserProfile = () => {
     };
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    updateUser({ username, email, avatar: avatar.imgUrl });
+  };
+
   return (
     <div className="profile-container">
       <Hero
         imageUrl="https://cdn.pixabay.com/photo/2021/05/04/08/29/digital-6228020_1280.jpg"
         title="Update Profile"
       />
-      <form
-        className="profile-form"
-        onSubmit={(e) => {
-          e.preventDefault();
-          updateUser({ username, email, avatar: avatar.imgUrl });
-        }}
-      >
+      <form className="profile-form" onSubmit={handleSubmit}>
         <label htmlFor="username">Username</label>
         <input
           type="text"

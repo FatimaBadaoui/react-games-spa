@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import userJSON from "../utilities/users.json";
 
 export const UserContext = createContext();
 
@@ -14,7 +15,11 @@ const UserContextProvider = ({ children }) => {
   };
 
   const updateUser = (userObj) => {
+    console.log(user);
     setUser({ ...user, ...userObj });
+    userJSON[user.id -1] = user;
+    // console.log(userJSON);
+
   };
 
   return (

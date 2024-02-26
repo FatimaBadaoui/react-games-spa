@@ -5,12 +5,14 @@ import { useContext, useState } from "react";
 import { UserContext } from "../../contexts/UserContext.jsx";
 import Hero from "../../components/Hero.jsx";
 
-const userData = {
-  username: "lilo",
-  password: "1234",
-  avatar: liloAvatar,
-  email: "lilo@example.com",
-};
+import userJSON from "../../utilities/users.json";
+
+// const userData = {
+//   username: "lilo",
+//   password: "1234",
+//   avatar: liloAvatar,
+//   email: "lilo@example.com",
+// };
 
 const Login = () => {
   const { login } = useContext(UserContext);
@@ -23,7 +25,8 @@ const Login = () => {
     const username = event.target.elements["username"].value;
     const password = event.target.elements["password"].value;
 
-    if (username === userData.username && password === userData.password) {
+    const userData = userJSON.find(user => user.username === username && user.password === password)
+    if (userData) {
       login(userData);
       navigate("/games");
     } else {
