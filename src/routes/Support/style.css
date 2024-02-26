@@ -57,13 +57,34 @@
   }
 }
 
+.support-message {
+  height: 80vh;
+  display: grid;
+  place-content: center;
+  p {
+    border: 1px solid var(--highlight-color);
+    border-radius: 20px;
+    box-shadow: var(--main-shadow);
+    background-color: var(--highlight-color);
+    max-width: 550px;
+    padding: 2rem;
+    margin: auto;
+    font-family: var(--highlight-font);
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 860px) {
-    .support {
-        /* height: fit-content; */
-        padding-bottom: 2rem;
-    }
-  .support-form {
+  .support {
+    /* height: fit-content; */
+    padding-bottom: 2rem;
+  }
+  .support-form, .support-message {
     width: 85%;
     font-size: 18px;
+  }
+
+  .support-message{
+    padding-left: 2rem;
   }
 }
