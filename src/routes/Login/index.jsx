@@ -1,18 +1,11 @@
 import "./style.css";
-import liloAvatar from "../../utilities/images/lilo.png";
+
 import { useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { UserContext } from "../../contexts/UserContext.jsx";
 import Hero from "../../components/Hero.jsx";
 
 import userJSON from "../../utilities/users.json";
-
-// const userData = {
-//   username: "lilo",
-//   password: "1234",
-//   avatar: liloAvatar,
-//   email: "lilo@example.com",
-// };
 
 const Login = () => {
   const { login } = useContext(UserContext);
