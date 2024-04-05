@@ -26,6 +26,57 @@ Welcome to the React Games website! This is a single-page application built usin
 - **CSS:** CSS is used for styling the website.
 - **Canva:** Canva is used for creating the website logo.
 
+## Structure
+
+```
+react-games-spa/
+│
+├── public/
+│ ├── favicon.ico
+│
+├── src/
+│ ├── components/
+│ │ ├── ContactCard.jsx
+│ │ ├── Developer.jsx
+│ │ ├── Footer.js
+│ │ ├── GameCard.jsx
+│ │ ├── Hero.jsx
+│ │ ├── HomeHero.jsx
+│ │ ├── NewsArticle.jsx
+│ │ ├── NewsFeed.jsx
+│ │ ├── NewsItem.jsx
+| | ├── PageLayout.jsx
+│ │ └── User.jsx
+│ │
+│ ├── contexts/
+│ │ └── UserContext.jsx
+| |
+| ├── routes/
+│ │ ├── About/
+| │ │ ├── index.jsx
+| │ │ └── style.css
+│ │ └── (... about the same for all the others routes)
+| |
+│ ├── styles/
+│ │ ├── Footer.css
+│ │ ├── NewsArticle.css
+│ │ ├── PageLayout.css
+│ │ └── variables.css
+│ │
+│ ├── App.css
+│ ├── App.jsx
+│ ├── index.css
+│ └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+
+```
+
 ## Developers
 
 <div>
