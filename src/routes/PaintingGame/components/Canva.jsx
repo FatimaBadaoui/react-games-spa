@@ -1,4 +1,4 @@
-import classes from "../style.module.css"
+import classes from "../style.module.css";
 
 import { useContext } from "react";
 import { PaintContext } from "../contexts/PaintContext.jsx";
@@ -8,7 +8,7 @@ const Canva = () => {
 
   // while the mouse is pressed and moving inside the canva it will add divs to the canva itself
   // the divs will be round and colored with the selected color and have the size of the selected size
-  // they will be placed depending on the location of the mouse 
+  // they will be placed depending on the location of the mouse
   const handleMove = (event) => {
     const { clientX, clientY } = event;
     const div = document.createElement("div");
@@ -17,8 +17,14 @@ const Canva = () => {
     div.style.borderRadius = "50%";
     div.style.backgroundColor = color;
     div.style.position = "absolute";
-    div.style.top = clientY + "px";
-    div.style.left = clientX + "px";
+
+    // Calculate the position relative to the parent element
+    const parentRect = canva.current.getBoundingClientRect();
+    const offsetX = clientX - parentRect.left;
+    const offsetY = clientY - parentRect.top;
+
+    div.style.top = offsetY + "px";
+    div.style.left = offsetX + "px";
     canva.current.appendChild(div);
   };
 
