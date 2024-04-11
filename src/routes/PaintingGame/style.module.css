@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap");
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +17,7 @@ body {
     background: linear-gradient(45deg, red, blue);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-   
+
     &.paint-title1 {
       writing-mode: vertical-rl;
       transform: rotate(180deg);
@@ -45,6 +44,7 @@ body {
   gap: 2rem;
 
   .canva {
+    position: relative;
     background-color: #fff;
     flex: 0 1 60%;
     min-width: 350px;
@@ -144,11 +144,10 @@ body {
     .drawing-container {
       margin-top: -11rem;
       background-image: none;
-      
+
       .inputs {
         margin-top: -14rem;
       }
     }
   }
 }
-
